@@ -80,6 +80,12 @@ void BehaviorViewer::initializeGui()
 	TwAddVarRW(m_TwBehaviorBar, "Max angular", TW_TYPE_DOUBLE, &BehaviorController::gMaxAngularSpeed, "");
 	TwAddVarRW(m_TwBehaviorBar, "Neighborhod", TW_TYPE_DOUBLE, &BehaviorController::gKNeighborhood, "");
 	TwAddVarRW(m_TwBehaviorBar, "Radius", TW_TYPE_DOUBLE, &BehaviorController::gAgentRadius, "");
+	TwAddVarRW(m_TwBehaviorBar, "KDeparture", TW_TYPE_DOUBLE, &BehaviorController::KDeparture, "");
+	TwAddVarRW(m_TwBehaviorBar, "KNoise", TW_TYPE_DOUBLE, &BehaviorController::KNoise, "");
+	TwAddVarRW(m_TwBehaviorBar, "KWander", TW_TYPE_DOUBLE, &BehaviorController::KWander, "");
+	TwAddVarRW(m_TwBehaviorBar, "KAvoid", TW_TYPE_DOUBLE, &BehaviorController::KAvoid, "");
+	TwAddVarRW(m_TwBehaviorBar, "TAvoid", TW_TYPE_DOUBLE, &BehaviorController::TAvoid, "");
+	TwAddVarRW(m_TwBehaviorBar, "KSeparation", TW_TYPE_DOUBLE, &BehaviorController::KSeparation, "");
 	TwAddVarRW(m_TwBehaviorBar, "Debug", TW_TYPE_BOOLCPP, &m_DebugDraw, "");
 	TwAddButton(m_TwBehaviorBar, "Reset", onResetCb, this, "");
 
